@@ -1,10 +1,15 @@
-import './App.css';
-
+import React from 'react';
+import { GlobalStyle } from './App.styles.js';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <main></main>
+      <Footer />
+    </>
   );
 }
 
