@@ -21,8 +21,8 @@ export default function Footer() {
         <EmailIcon data-testid="email-icon" />
       </IconContainer>
       <div>
-        <a>Terms of Services</a>
-        <a>Privacy</a>
+        <a href="#">Terms of Services</a>
+        <a href="#">Privacy</a>
       </div>
     </StyledFooter>
   );

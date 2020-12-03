@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <nav>
-        <img src={Logo} />
+        <img src={Logo} alt="company logo" />
       </nav>
       <p>Queen Solutions Test</p>
       <Icon data-testid="shopping-icon" />

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ShoppingBag } from '@styled-icons/heroicons-outline/ShoppingBag';
+import { FileUpload } from '@styled-icons/fa-solid/FileUpload';
 
 export const StyledHeader = styled.header`
   position: fixed;
@@ -41,7 +41,7 @@ export const StyledHeader = styled.header`
   }
 `;
 
-export const Icon = styled(ShoppingBag)`
+export const Icon = styled(FileUpload)`
   color: #585858;
   height: 25px;
   width: 15%;
