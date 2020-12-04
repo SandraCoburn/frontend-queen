@@ -25,8 +25,16 @@ const FileUpload = () => {
 
       reader.onload = (e) => {
         const fileContent = JSON.parse(e.target.result);
-        console.log(fileContent);
-        setData(fileContent);
+        console.log('file content', fileContent[0]);
+        if (
+          fileContent[0].domain !== undefined &&
+          fileContent[0].visitors !== undefined &&
+          fileContent[0].date !== undefined
+        ) {
+          setData(fileContent);
+        } else {
+          message.error(`${file.name} doesn't have the right data`);
+        }
       };
       reader.readAsText(file);
 
@@ -38,10 +46,7 @@ const FileUpload = () => {
     },
     onChange(info) {
       if (info.file.status === 'done') {
-        let parsedData = info.file;
         message.success(`${info.file.name} file uploaded successfully`);
-        // setData(parsedData);
-        console.log('hello', parsedData);
       } else if (info.file.status === 'error') {
         message.error(`${info.file.name} file upload failed.`);
       }
@@ -56,17 +61,19 @@ const FileUpload = () => {
     },
   };
   return (
-    <LoaderSection>
-      <div className="p">
-        <p> Upload JSON documents</p>
-      </div>
-      <Upload customRequest={request} {...props}>
-        <Button icon={<UploadOutlined />}>Click to Upload</Button>
-      </Upload>
-      <div className="table">
-        <DataTable data={data} />
-      </div>
-    </LoaderSection>
+    <>
+      <LoaderSection>
+        <div className="p">
+          <p> Upload JSON documents</p>
+        </div>
+        <Upload customRequest={request} {...props}>
+          <Button icon={<UploadOutlined />}>Click to Upload</Button>
+        </Upload>
+        <div className="table">
+          <DataTable data={data} />
+        </div>
+      </LoaderSection>
+    </>
   );
 };
 export default FileUpload;
