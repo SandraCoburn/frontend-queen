@@ -32,7 +32,7 @@ export const StyledFooter = styled.footer`
     a {
       color: #585858;
       text-decoration: none;
-      font-size: 0.7em;
+      font-size: 0.9em;
       @media (max-width: 768px) {
         font-size: 0.5em;
       }
@@ -54,7 +54,7 @@ export const IconContainer = styled.div`
 
 // icons
 export const LinkIcon = styled(Link)`
-  height: 0.75em;
+  height: 1.5em;
   background: #fff;
   color: #121212;
   border-radius: 50%;
@@ -62,7 +62,7 @@ export const LinkIcon = styled(Link)`
 `;
 
 export const TwitterIcon = styled(Twitter)`
-  height: 0.75em;
+  height: 1.5em;
   background: #fff;
   color: #121212;
   border-radius: 50%;
@@ -70,7 +70,7 @@ export const TwitterIcon = styled(Twitter)`
 `;
 
 export const InstagramIcon = styled(Instagram)`
-  height: 0.75em;
+  height: 1.5em;
   background: #fff;
   color: #121212;
   border-radius: 50%;
@@ -78,7 +78,7 @@ export const InstagramIcon = styled(Instagram)`
 `;
 
 export const FacebookIcon = styled(Facebook)`
-  height: 0.75em;
+  height: 1.5em;
   background: #fff;
   color: #121212;
   border-radius: 50%;
@@ -86,7 +86,7 @@ export const FacebookIcon = styled(Facebook)`
 `;
 
 export const EmailIcon = styled(Envelope)`
-  height: 0.75em;
+  height: 1.5em;
   background: #fff;
   color: #121212;
   border-radius: 50%;

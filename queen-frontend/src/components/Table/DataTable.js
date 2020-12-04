@@ -3,7 +3,7 @@ import { Table } from 'antd';
 import 'antd/dist/antd.css';
 import { StyledTable } from './DataTable.styles';
 
-const DataTable = () => {
+const DataTable = ({ data }) => {
   const columns = [
     {
       title: 'Domain',
@@ -22,14 +22,14 @@ const DataTable = () => {
       key: 'date',
     },
   ];
-  const data = [
-    {
-      id: { $oid: '5fa2d5cffc13ae5d48000008' },
-      domain: 'MySpace.com',
-      visitors: 786,
-      date: '2020-06-01',
-    },
-  ];
+  // const data = [
+  //   {
+  //     id: { $oid: '5fa2d5cffc13ae5d48000008' },
+  //     domain: 'MySpace.com',
+  //     visitors: 786,
+  //     date: '2020-06-01',
+  //   },
+  // ];
 
   return (
     <StyledTable>

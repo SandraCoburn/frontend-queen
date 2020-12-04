@@ -18,9 +18,9 @@ export const LoaderSection = styled.section`
     width: 100%;
     margin: 56px 0 5%;
   }
-  /* text  */
-  div {
+  /* Table  */
+  .table {
     max-width: 100%;
-    padding: 5%;
+    width: 80%;
   }
 `;
