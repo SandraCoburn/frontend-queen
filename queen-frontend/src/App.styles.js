@@ -2,9 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        min-height: 100vh;
-        background-color:white;
-      
+    
+         box-sizing: border-box;
+         min-height: cal(100vh - 40px)
+    
     }
 
     html, body {
@@ -13,9 +14,12 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 200;
         margin: 0;
         padding: 0;
+       
+        overflow: auto;
+        overflow-x: hidden;
     }
     main {
-        margin: 0 auto 146px;
+         box-sizing: border-box;
         
     }
 

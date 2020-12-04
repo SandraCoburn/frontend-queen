@@ -22,14 +22,6 @@ const DataTable = ({ data }) => {
       key: 'date',
     },
   ];
-  // const data = [
-  //   {
-  //     id: { $oid: '5fa2d5cffc13ae5d48000008' },
-  //     domain: 'MySpace.com',
-  //     visitors: 786,
-  //     date: '2020-06-01',
-  //   },
-  // ];
 
   return (
     <StyledTable>

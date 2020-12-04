@@ -12,8 +12,9 @@ function App() {
       <main>
         <FileUpload />
       </main>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }

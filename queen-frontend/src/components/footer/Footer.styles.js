@@ -9,7 +9,7 @@ import { Link } from '@styled-icons/heroicons-outline/Link';
 export const StyledFooter = styled.footer`
   position: fixed;
   width: 100%;
-  height: 146px;
+  height: 8%;
   left: 0px;
   bottom: 0px;
   background: rgba(0, 0, 0, 0.2);

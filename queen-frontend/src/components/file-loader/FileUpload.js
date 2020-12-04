@@ -56,17 +56,19 @@ const FileUpload = () => {
     },
   };
   return (
-    <LoaderSection>
-      <div className="p">
-        <p> Upload JSON documents</p>
-      </div>
-      <Upload customRequest={request} {...props}>
-        <Button icon={<UploadOutlined />}>Click to Upload</Button>
-      </Upload>
-      <div className="table">
-        <DataTable data={data} />
-      </div>
-    </LoaderSection>
+    <>
+      <LoaderSection>
+        <div className="p">
+          <p> Upload JSON documents</p>
+        </div>
+        <Upload customRequest={request} {...props}>
+          <Button icon={<UploadOutlined />}>Click to Upload</Button>
+        </Upload>
+        <div className="table">
+          <DataTable data={data} />
+        </div>
+      </LoaderSection>
+    </>
   );
 };
 export default FileUpload;

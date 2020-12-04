@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { FileUpload } from '@styled-icons/fa-solid/FileUpload';
 
 export const StyledHeader = styled.header`
+  display: flex;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
   height: 10vh;
@@ -11,7 +13,8 @@ export const StyledHeader = styled.header`
   color: #585858;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  z-index: 200;
+  box-sizing: border-box;
 
   p {
     margin: 0 auto;
@@ -21,14 +24,13 @@ export const StyledHeader = styled.header`
 
     letter-spacing: 2px;
   }
-  img {
-    width: 100px;
-    heigth: 100px;
-  }
+
   nav {
     display: flex;
     justify-content: space-evenly;
-    width: 15%;
+    margin: 5%;
+
+    box-sizing: border-box;
     @media (max-width: 768px) {
       display: none;
     }
@@ -45,4 +47,5 @@ export const Icon = styled(FileUpload)`
   color: #585858;
   height: 25px;
   width: 15%;
+  margin-right: 15%;
 `;
