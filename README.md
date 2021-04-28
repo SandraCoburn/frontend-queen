@@ -1,4 +1,4 @@
-# Front End Implementation
+# Front End Implementation - Queen take home project
 
 [Deployed site](https://unruffled-shaw-11788f.netlify.app/)
 
