@@ -1,7 +1,7 @@
 # Front End Implementation - Queen take home project
 
-[Deployed site](https://unruffled-shaw-11788f.netlify.app/)
-[Frontedn Implementation Plans](https://docs.google.com/document/d/1mwXFN9bfYh2EN2DZN4-Agl0cAzO5zgFCAqEt1vbLQxI/edit?usp=sharing)
+- [Deployed site](https://unruffled-shaw-11788f.netlify.app/)
+- [Frontend and Database Implementation Plans](https://docs.google.com/document/d/1mwXFN9bfYh2EN2DZN4-Agl0cAzO5zgFCAqEt1vbLQxI/edit?usp=sharing)
 
 ```
 Framework: ReactJS
